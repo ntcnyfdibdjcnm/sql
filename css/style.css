@@ -1,0 +1,149 @@
+body{
+	background-color: #F3F3F3;
+}
+
+.menu{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 216px;
+	height: 100%;
+	background-color: white;
+}
+
+.knopka_invest{
+	margin-top: 12px;
+	margin-left: 15px;
+}
+
+.knopka_pomoch{
+	margin-top: 21px;
+	margin-left: 40px;
+}
+
+.knopka_dannie{
+	margin-top: 23px;
+	margin-left: 40px;
+}
+
+.vihod{
+	color: white;
+	background-color: red;
+	margin-top: 100px;
+	margin-left: 120px;
+}
+
+.icon{
+	margin-left: 30px;
+}
+
+.vas_meneger{
+	margin-top: 15px;
+	margin-left: 200px;
+}
+
+.fio_meneger{
+	margin-top: -10px;
+	margin-left: 180px;
+}
+
+.tel_mail{
+	margin-top: -10px;
+	margin-left: 180px;
+}
+
+.dan_prof{
+	margin-top: 20px;
+	margin-left: 225px;
+	width: 1230px;
+	height: 85px;
+	border: 1px;
+	background-color: white;
+	box-shadow: 0 0 3px 3px #DCDCDC;
+	line-height: 85px;
+}
+
+.meneger{
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 225px;
+	width: 605px;
+	height: 145px;
+	border: 1px;
+	background-color: white;
+	box-shadow: 0 0 3px 3px #DCDCDC;
+}
+
+.inf{
+	position: absolute;
+	margin-top: 185px;
+	margin-left: 225px;
+	width: 605px;
+	height: 200px;
+	border: 1px;
+	background-color: white;
+	box-shadow: 0 0 3px 3px #DCDCDC;
+}
+
+.foto{
+	margin-top: 20px;
+	margin-left: 60px;
+}
+
+.inf_o_vlad{
+	margin-top: 25px;
+	margin-left: 120px;
+}
+
+.tablicha{
+	margin-top: 20px;
+	margin-left: 50px;
+
+}
+
+.kripta_dengi{
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 850px;
+	width: 605px;
+	height: 145px;
+	border: 1px;
+	background-color: white;
+	box-shadow: 0 0 3px 3px #DCDCDC;
+}
+
+.balans{
+	margin-top: 20px;
+	margin-left: 50px;
+}
+
+.popolnit_balans{
+	margin-top: 10px;
+	margin-left: 50px;
+}
+
+.popolnit{
+	padding: 15px;
+	margin-top: -110px;
+	margin-left: 450px;
+	color: white;
+	background-color: #007F39;
+}
+
+.koshel{
+	margin-top: -40px;
+	margin-left: 60px;
+}
+
+.podval{
+	width: 800px;
+	height: 50px;
+	margin-top: 200px;
+	margin-left: 880px;
+}
+
+.podval2{
+	width: 625px;
+	margin-top: -30px;
+	margin-left: 850px;
+}

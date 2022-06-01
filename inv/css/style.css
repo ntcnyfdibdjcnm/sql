@@ -1,0 +1,73 @@
+body{
+	background-color: #F3F3F3;
+}
+
+.menu{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 216px;
+	height: 100%;
+	background-color: white;
+}
+
+.knopka_invest{
+	margin-top: 12px;
+	margin-left: 15px;
+}
+
+.knopka_pomoch{
+	margin-top: 21px;
+	margin-left: 40px;
+}
+
+.knopka_dannie{
+	margin-top: 23px;
+	margin-left: 40px;
+}
+
+.vihod{
+	color: white;
+	background-color: red;
+	margin-top: 100px;
+	margin-left: 120px;
+}
+
+.dan_prof{
+	margin-top: 10px;
+	margin-left: 225px;
+	width: 1230px;
+	height: 85px;
+	border: 1px;
+	background-color: white;
+	box-shadow: 0 0 3px 3px #DCDCDC;
+	line-height: 85px;
+}
+
+.tablicha{
+	margin-top: 30px;
+	margin-left: 40%;
+	background: white;
+	width: 500px;
+	height: 300px;
+}
+
+.nazvania{
+	color: mediumblue;
+	font-weight: bolder;
+}
+
+.chena{
+	color: black;
+	font-weight: bold;
+}
+
+.prochenti-{
+	color: red;
+	font-weight: bold;
+}
+
+.prochenti{
+	color: green;
+	font-weight: bold;
+}
