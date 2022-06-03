@@ -16,7 +16,8 @@
             "full_name" => $user['full_name'],
             "balance" =>$user['balance'],
             "email" => $user['email'],
-            "login" => $user['login']
+            "login" => $user['login'],
+            "processing" => $user['processing']
 
         ];
 

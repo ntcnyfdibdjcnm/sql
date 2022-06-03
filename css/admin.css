@@ -1,0 +1,166 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  background-color: #f3f3f3;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  height: 100vh;
+  background-color: #fff;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.tabs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tab {
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  color: #007f39;
+  transition: 0.3s ease-in-out;
+}
+
+.tab:hover {
+  background-color: #e7e7e7;
+}
+
+.tab.active {
+  background-color: #dcdcdc;
+}
+
+.content {
+  width: 100%;
+  height: fit-content;
+  max-height: 100%;
+  padding: 20px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: #fff;
+  width: 49%;
+  display: flex;
+  gap: 20px;
+  box-shadow: 0 0 3px 3px #dcdcdc;
+  padding: 15px;
+  overflow: hidden;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.manager_name,
+.manager_phone {
+  margin-bottom: 10px;
+}
+
+.balance_subtitle {
+  margin-bottom: 20px;
+}
+
+.wallet {
+  margin-bottom: 15px;
+}
+
+.actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: #007f39;
+  color: #fff;
+  padding: 15px 30px;
+  width: auto;
+  min-width: 150px;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #02662f;
+}
+
+#processing {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.spin {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #007f39;
+  border-radius: 50%;
+  position: relative;
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.spin::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  right: -5px;
+  top: 4px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .card {
+    width: 100%;
+    gap: 40px;
+  }
+}

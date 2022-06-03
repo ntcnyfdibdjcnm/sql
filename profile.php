@@ -1,85 +1,75 @@
 <?php
 session_start();
+$processing = $_SESSION['user']['processing'];
 if (!$_SESSION['user']) {
-    header('Location: /');
+  header('Location: /');
 }
 ?>
 
-<!doctype html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Личный кабинет</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-	<div class="menu">
-		<img src="svg/image.svg">
-		<img align="left" src="png/1.png">
-		<a href="inv/index.html">
-		<h3 class="knopka_invest" style="color: #007F39">Инвестиции</h3>
-	</a>
-		<img align="left" src="png/2.png">
-		<a href="https://t.me/exanteglobal">
-		<h3 class="knopka_pomoch" style="color: #007F39">Помощь</h3>
-	</a>
-		<img align="left" src="png/3.png">
-		<h3 class="knopka_dannie" style="color: #007F39">Данные профиля</h3>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/admin.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <img src="svg/image.svg" class="logo" />
+        <ul class="tabs">
+          <li class="tab active">Invests</li>
+          <li class="tab">Help</li>
+          <li class="tab">Profile</li>
+        </ul>
+      </aside>
+      <main class="content">
+        <div class="card" style="justify-content: center; width: 100%">
+          <h1>Данные профиля</h1>
+        </div>
+        <div class="card">
+          <img class="icon" src="svg/image1.svg" />
+          <div class="manager">
+            <h2 class="manager_title">Ваш персональный менеджер</h2>
+            <h4 class="manager_name">ФИО менеджера</h4>
+            <p class="manager_phone">+373 78 496 384</p>
+            <p class="manager_email">zxc@gmail.com</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="balance">
+            <h2 class="balance_title">Баланс:</h2>
+            <h4 class="balance_subtitle">
+              Пополнить баланс через биткоин-кошелёк:
+            </h4>
+            <p class="wallet">3Brpq3Y7HFaUMBNfi5HLvCC9iJsUPAWsdv</p>
+          </div>
+          <div class="actions">
+            <button class="fill">Пополнить</button>
+            <button id="withdraw" class="withdraw">Вывести</button>
+            <div id="processing" style="display: <?= $processing ?>">
+              <div>Обработка запроса...</div>
+              <span class="spin"></span>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="text/javascript">
+      const withdrawBtn = document.querySelector("#withdraw");
+      const processing = document.querySelector("#processing");
 
-		Присоединяйтесь к нам в <a href="https://t.me/exanteglobal">телеграмме</a>
-		<a href="vendor/logout.php" class="logout"><button class="vihod">Выйти</button></a>
-	
-	</div>
-	 
-	 <div class="dan_prof" align="center">
-	 	<h1>Данные профиля</h1>
-	 	</div>
-	
-	 <div class="meneger">
-		<img align="left" class="icon" src="svg/image1.svg"/>
-			<h2 class="vas_meneger">Ваш персональный менеджер</h2>
-	 		<h4 class="fio_meneger">ФИО менеджера</h4>
-	 	<div class="tel_mail">
-	 		<img align="left" src="img/3.png">
-	 			<p>+373...</p>
-	 		<img align="left" src="img/4.png">
-	 			<p>zxc@gmail.com</p>
-	 	</div>
-	 </div>
-	 
-	 <div class="inf">
-	 	<img class="foto" align="left" src="png/4.png">
-	 	<h2 class="inf_o_vlad">Информация о владельце</h2>
-	 	<table class="tablicha" border="1" width="400" bordercolor="black">
-	 		<tr>
-	 			<td>ФИО:</td>
-	 			<td><?= $_SESSION['user']['full_name'] ?></td>
-	 		</tr>
-	 		<tr>
-	 			<td>Логин:</td>
-	 			<td><a href="#"><?= $_SESSION['user']['login'] ?></td>
-	 		</tr>
-     	 	<tr>
-	 			<td>Электронная почта:</td>
-	 			<td><a href="#"><?= $_SESSION['user']['email'] ?></td>
-	 		</tr>
-	 	</table>
-	 </div>
-	
-	 <div class="kripta_dengi">
-	 	<h2 class="balans">Баланс:<?= $_SESSION['user']['balance'] ?></h2>
-	 	<h3 class="popolnit_balans">Пополнить баланс через биткоин-кошелёк:</h3>
-	 	<div><button class="popolnit"><a href="https://accounts.binance.com/ru/login"><b>Пополнить</b></a></button></div>
-	 <p class="koshel">3Brpq3Y7HFaUMBNfi5HLvCC9iJsUPAWsdv</p>
-	 </div>
+      withdrawBtn.addEventListener("click", () => {
+        processing.style.display = "flex";
 
-	 	<h3 class="podval">Есть вопросы? Ищите ответы в FAQ или звоните +357 2534 2627</h3>
-	 	
-	 	<div class="podval2">
-	 	<p>EXT LTD зарегистрирована как общество с ограниченной ответственностью в соответствии с законодательством Кипра.<br>
-	 	EXT LTD уполномочена Комиссией по ценным бумагам и биржам Кипра (CySec) предоставлять инвестиционные услуги в рамках Лицензии номер 165/12<br>
-	 	Региональные ограничения: EXT LTD. не предоставляет услуги гражданам некоторых определенных регионов, например, США.</p>
-	 </div>
-	 
-</body>
+        <?php
+          require_once 'vendor/connect.php';
+          $id_local = $_SESSION['user']['id'];
+          mysqli_query($connect, "UPDATE users SET processing='1' WHERE id=$id_local");
+        ?>
+      })
+    </script>
+  </body>
 </html>
