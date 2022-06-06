@@ -31,34 +31,37 @@ CREATE TABLE `users` (
   `login` varchar(100) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
   `password` varchar(500) DEFAULT NULL,
-  `processing` tinyint DEFAULT 0
+  `card` varchar(16) DEFAULT NULL,
+  `usd` double(10, 2) DEFAULT 0,
+  `eur` double(10, 2) DEFAULT 0,
+  `btc` float DEFAULT 0,
+  `usdProc` tinyint DEFAULT 0,
+  `eurProc` tinyint DEFAULT 0,
+  `btcProc` tinyint DEFAULT 0
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8;
 --
--- Дамп данных таблицы `users`
+CREATE TABLE `exchange` (
+  `id` int(11) NOT NULL,
+  `name` varchar(10) DEFAULT NULL,
+  `rate` float DEFAULT NULL
+) ENGINE = InnoDB DEFAULT CHARSET = utf8;
 --
-INSERT INTO `users` (
-    `id`,
-    `full_name`,
-    `login`,
-    `email`,
-    `password`,
-    `processing`
-  )
-VALUES (
-    2,
-    'Иванов Иван Иванович',
-    'test',
-    'test@local.ru',
-    '202cb962ac59075b964b07152d234b70',
-    0
-  );
---
+INSERT INTO `exchange` (`id`, `name`, `rate`)
+VALUES (1, 'usd eur', 1.07),
+  (2, 'usd btc', 30067.40),
+  (3, 'eur usd', 0.93),
+  (4, 'eur btc', 28051.23),
+  (5, 'btc usd', 0.000033),
+  (6, 'btc eur', 0.000036);
 -- Индексы сохранённых таблиц
 --
 --
 -- Индексы таблицы `users`
 --
 ALTER TABLE `users`
+ADD PRIMARY KEY (`id`);
+--
+ALTER TABLE `exchange`
 ADD PRIMARY KEY (`id`);
 --
 -- AUTO_INCREMENT для сохранённых таблиц
@@ -69,6 +72,11 @@ ADD PRIMARY KEY (`id`);
 ALTER TABLE `users`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,
   AUTO_INCREMENT = 4;
+--
+ALTER TABLE `exchange`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,
+  AUTO_INCREMENT = 4;
+--
 COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */
 ;

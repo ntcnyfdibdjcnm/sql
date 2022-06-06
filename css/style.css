@@ -1,153 +1,207 @@
-body {
-  background-color: #f3f3f3;
+body{
+	background-color: #F3F3F3;
 }
 
-.menu {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 216px;
-  height: 100%;
-  background-color: white;
+.menu{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 216px;
+	height: 100%;
+	background-color: white;
 }
 
-.knopka_invest {
-  margin-top: 12px;
-  margin-left: 15px;
+.knopka_invest{
+	margin-top: 12px;
+	margin-left: 15px;
 }
 
-.knopka_pomoch {
-  margin-top: 21px;
-  margin-left: 40px;
+.knopka_pomoch{
+	margin-top: 21px;
+	margin-left: 40px;
 }
 
-.knopka_dannie {
-  margin-top: 23px;
-  margin-left: 40px;
+.knopka_dannie{
+	margin-top: 23px;
+	margin-left: 40px;
 }
 
-.vihod {
-  color: white;
-  background-color: red;
-  margin-top: 100px;
-  margin-left: 120px;
+.kontakti{
+	margin-left: 40px;
 }
 
-.icon {
-  margin-left: 30px;
+.kontakti_nomera{
+	margin-top: 0px;
+	margin-left: 10px;
 }
 
-.vas_meneger {
-  margin-top: 15px;
-  margin-left: 200px;
+.prisoedinaites{
+	margin-left: 10px;
 }
 
-.fio_meneger {
-  margin-top: -10px;
-  margin-left: 180px;
+.vihod{
+	margin-top: 50%;
+	margin-left: 70%;
 }
 
-.tel_mail {
-  margin-top: -10px;
-  margin-left: 180px;
+.icon{
+	margin-left: 30px;
 }
 
-.dan_prof {
-  margin-top: 20px;
-  margin-left: 225px;
-  width: 1230px;
-  height: 85px;
-  border: 1px;
-  background-color: white;
-  box-shadow: 0 0 3px 3px #dcdcdc;
-  line-height: 85px;
+.vas_meneger{
+	margin-top: 15px;
+	margin-left: 200px;
 }
 
-.meneger {
-  position: absolute;
-  margin-top: 20px;
-  margin-left: 225px;
-  width: 605px;
-  height: 145px;
-  border: 1px;
-  background-color: white;
-  box-shadow: 0 0 3px 3px #dcdcdc;
+.fio_meneger{
+	margin-top: -10px;
+	margin-left: 180px;
 }
 
-.inf {
-  position: absolute;
-  margin-top: 185px;
-  margin-left: 225px;
-  width: 605px;
-  height: 200px;
-  border: 1px;
-  background-color: white;
-  box-shadow: 0 0 3px 3px #dcdcdc;
+.tel_mail{
+	margin-top: -10px;
+	margin-left: 180px;
 }
 
-.foto {
-  margin-top: 20px;
-  margin-left: 60px;
+.dan_prof{
+	margin-top: 20px;
+	margin-left: 225px;
+	width: 1230px;
+	height: 85px;
+	border: 1px;
+	background-color: white;
+	box-shadow: 0 0 3px 3px #DCDCDC;
+	line-height: 85px;
 }
 
-.inf_o_vlad {
-  margin-top: 25px;
-  margin-left: 120px;
+.meneger{
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 225px;
+	width: 605px;
+	height: 145px;
+	border: 1px;
+	background-color: white;
+	box-shadow: 0 0 3px 3px #DCDCDC;
 }
 
-.tablicha {
-  margin-top: 20px;
-  margin-left: 50px;
+.inf{
+	position: absolute;
+	margin-top: 185px;
+	margin-left: 225px;
+	width: 605px;
+	height: 200px;
+	border: 1px;
+	background-color: white;
+	box-shadow: 0 0 3px 3px #DCDCDC;
 }
 
-.kripta_dengi {
-  position: absolute;
-  margin-top: 20px;
-  margin-left: 850px;
-  width: 605px;
-  height: 145px;
-  border: 1px;
-  background-color: white;
-  box-shadow: 0 0 3px 3px #dcdcdc;
+.foto{
+	margin-top: 20px;
+	margin-left: 60px;
 }
 
-.balans {
-  margin-top: 20px;
-  margin-left: 50px;
+.inf_o_vlad{
+	margin-top: 25px;
+	margin-left: 120px;
 }
 
-.popolnit_balans {
-  margin-top: 10px;
-  margin-left: 50px;
+.tablicha{
+	margin-top: 20px;
+	margin-left: 50px;
+
 }
 
-.popolnit {
-  padding: 15px;
-  margin-top: -110px;
-  margin-left: 450px;
-  color: white;
-  background-color: #007f39;
-  cursor: pointer;
+.kripta_dengi{
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 850px;
+	width: 605px;
+	height: 365px;
+	background-color: white;
+	box-shadow: 0 0 3px 3px #DCDCDC;
 }
 
-.popolnit a {
-  text-decoration: none;
+.balans{
+	margin-left: 10px;
 }
 
-.koshel {
-  margin-top: -40px;
-  margin-left: 60px;
+.popolnit1{
+	margin-left: 20%;
+	background: #006400;
+	color: white;
+	font-weight: bold;
 }
 
-.podval {
-  width: 800px;
-  height: 50px;
-  margin-top: 200px;
-  margin-left: 880px;
+.popolnit2{
+	margin-left: 22%;
+	background: #006400;
+	color: white;
+	font-weight: bold;
 }
 
-.podval2 {
-  width: 625px;
-  margin-top: -30px;
-  margin-left: 850px;
+.popolnit3{
+	margin-left: 16%;
+	background: #006400;
+	color: white;
+	font-weight: bold;
+}
+
+.vivesti1{
+	background: #32CD32;
+	color: black;
+	font-weight: bold;
+}
+
+.vivesti2{
+	background: #32CD32;
+	color: black;
+	font-weight: bold;
+}
+
+.vivesti3{
+	background: #32CD32;
+	color: black;
+	font-weight: bold;
+}
+
+.zapros{
+	margin-top: -35px;
+	margin-left: 400px;
+}
+
+.konvertirovat{
+	margin-left: 30px;
+}
+
+.zapros2{
+	margin-top: -20px;
+	margin-left: 30%;
+}
+
+.nomer_karti{
+	margin-top: -50px;
+	margin-left: 70%;
+}
+
+.zachislenie{
+	margin-top: 40px;
+	margin-left: 30px;
+}
+
+.vivod{
+	position: relative;
+	margin-top: 255px;
+	margin-left: 1200px;
+}
+
+.podval{
+	margin-top: 100px;
+	margin-left: 300px;
+}
+
+.podval2{
+	width: 1100px;
+	margin-top: 10px;
+	margin-left: 250px;
 }

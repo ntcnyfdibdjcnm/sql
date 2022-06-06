@@ -27,8 +27,15 @@ body {
 }
 
 .sidebar {
+  position: relative;
   height: 100vh;
   background-color: #fff;
+}
+
+.sidebar-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .logo {
@@ -39,6 +46,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: 30px;
 }
 
 .tab {
@@ -65,8 +73,18 @@ body {
   padding: 20px 15px;
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  flex-direction: row;
+  place-items: flex-start;
+  gap: 20px;
   justify-content: space-between;
+  overflow-y: auto;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 39%;
+  gap: 20px;
 }
 
 .card {
@@ -77,30 +95,69 @@ body {
   box-shadow: 0 0 3px 3px #dcdcdc;
   padding: 15px;
   overflow: hidden;
+  align-items: flex-start;
 }
 
 h2 {
   margin-bottom: 15px;
 }
 
-.manager_name,
-.manager_phone {
+.manager_avatar {
+  width: 130px;
+}
+
+.manager_fio {
   margin-bottom: 10px;
 }
 
-.balance_subtitle {
+.manager_row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 5px;
+}
+
+.manager_row img {
+  width: 16px;
+  height: fit-content;
+}
+
+.owner_title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.owner_title h2 {
+  margin: 0;
+}
+
+.owner_info {
+  border-spacing: 30px 10px;
+}
+
+.owner_info tr {
+  border: 1px solid #000;
+}
+
+.balance_wallet {
+  font-weight: 700;
+  font-size: 20px;
+  border-spacing: 10px;
   margin-bottom: 20px;
 }
 
-.wallet {
-  margin-bottom: 15px;
+.wallet_actions {
+  display: flex;
+  gap: 10px;
 }
 
-.actions {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+button.convert {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgb(223, 226, 13);
+  font-size: 24px;
 }
 
 button {
@@ -108,9 +165,9 @@ button {
   cursor: pointer;
   background-color: #007f39;
   color: #fff;
-  padding: 15px 30px;
+  padding: 10px 20px;
   width: auto;
-  min-width: 150px;
+  min-width: 120px;
   font-weight: 600;
   transition: 0.3s ease-in-out;
 }
@@ -149,6 +206,41 @@ button:hover {
   top: 4px;
 }
 
+.popupWin {
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 60px 120px;
+
+  background: #98fb98;
+  font-size: 14px;
+  display: none;
+  position: fixed; /* фиксированное позиционирование, окно стабильно при прокрутке */
+  border: 1px solid #383838;
+}
+
+.popupWin form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.popupWin input {
+  width: 100%;
+}
+
+#shadow {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* поверх всех  кроме окна*/
+  background: #ffffff;
+  opacity: 0.8; /*прозрачность*/
+  left: 0;
+  top: 0;
+}
+
 @keyframes spin {
   from {
     transform: rotateZ(0deg);
@@ -159,8 +251,12 @@ button:hover {
 }
 
 @media only screen and (max-width: 1250px) {
+  .left {
+    width: 100% !important;
+  }
+
   .card {
-    width: 100%;
+    width: 100% !important;
     gap: 40px;
   }
 }
