@@ -26,11 +26,22 @@ body{
 	margin-left: 40px;
 }
 
+.kontakti{
+	margin-left: 40px;
+}
+
+.kontakti_nomera{
+	margin-top: 0px;
+	margin-left: 10px;
+}
+
+.prisoedinaites{
+	margin-left: 10px;
+}
+
 .vihod{
-	color: white;
-	background-color: red;
-	margin-top: 100px;
-	margin-left: 120px;
+	margin-top: 50%;
+	margin-left: 70%;
 }
 
 .icon{
@@ -106,44 +117,91 @@ body{
 	margin-top: 20px;
 	margin-left: 850px;
 	width: 605px;
-	height: 145px;
-	border: 1px;
+	height: 365px;
 	background-color: white;
 	box-shadow: 0 0 3px 3px #DCDCDC;
 }
 
 .balans{
-	margin-top: 20px;
-	margin-left: 50px;
+	margin-left: 10px;
 }
 
-.popolnit_balans{
-	margin-top: 10px;
-	margin-left: 50px;
-}
-
-.popolnit{
-	padding: 15px;
-	margin-top: -110px;
-	margin-left: 450px;
+.popolnit1{
+	margin-left: 20%;
+	background: #006400;
 	color: white;
-	background-color: #007F39;
+	font-weight: bold;
 }
 
-.koshel{
-	margin-top: -40px;
-	margin-left: 60px;
+.popolnit2{
+	margin-left: 22%;
+	background: #006400;
+	color: white;
+	font-weight: bold;
+}
+
+.popolnit3{
+	margin-left: 16%;
+	background: #006400;
+	color: white;
+	font-weight: bold;
+}
+
+.vivesti1{
+	background: #32CD32;
+	color: black;
+	font-weight: bold;
+}
+
+.vivesti2{
+	background: #32CD32;
+	color: black;
+	font-weight: bold;
+}
+
+.vivesti3{
+	background: #32CD32;
+	color: black;
+	font-weight: bold;
+}
+
+.zapros{
+	margin-top: -35px;
+	margin-left: 400px;
+}
+
+.konvertirovat{
+	margin-left: 30px;
+}
+
+.zapros2{
+	margin-top: -20px;
+	margin-left: 30%;
+}
+
+.nomer_karti{
+	margin-top: -50px;
+	margin-left: 70%;
+}
+
+.zachislenie{
+	margin-top: 40px;
+	margin-left: 30px;
+}
+
+.vivod{
+	position: relative;
+	margin-top: 255px;
+	margin-left: 1200px;
 }
 
 .podval{
-	width: 800px;
-	height: 50px;
-	margin-top: 200px;
-	margin-left: 880px;
+	margin-top: 100px;
+	margin-left: 300px;
 }
 
 .podval2{
-	width: 625px;
-	margin-top: -30px;
-	margin-left: 850px;
+	width: 1100px;
+	margin-top: 10px;
+	margin-left: 250px;
 }

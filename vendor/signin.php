@@ -14,10 +14,15 @@
         $_SESSION['user'] = [
             "id" => $user['id'],
             "full_name" => $user['full_name'],
-            "balance" =>$user['balance'],
             "email" => $user['email'],
-            "login" => $user['login']
-
+            "login" => $user['login'],
+            "card" => $user['card'],
+            "usd" => $user['usd'],
+            "eur" => $user['eur'],
+            "btc" => $user['btc'],
+            "usdProc" => $user['usdProc'],
+            "eurProc" => $user['eurProc'],
+            "btcProc" => $user['btcProc']
         ];
 
         header('Location: ../profile.php');
